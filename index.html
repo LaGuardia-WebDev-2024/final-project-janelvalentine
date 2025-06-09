@@ -1,112 +1,118 @@
-<!-- Final Project
-Requirements
-[  ] Customized HTML Page #1
-[  ] Customized HTML Page #2 
-[  ] Customized HTML Page #3
-[  ] Customized HTML Page #4
 
-Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
-[ no ] Feature 2 - Upload a Font
-[ no ] Feature 3 - Include jQuery
-[ no ] Feature 4 - Embed Code from Spotify/Google Docs/YouTube
-[ no ] Feature 5 - Customized HTML Page #5
--->
-
-<!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Paprika&display=swap" rel="stylesheet">
+    <title>JANEL VALENTINE </title>
     <meta charset="utf-8" />
-    <title>Final Project</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
-      /* Styling Only Related To THIS Page */
-      /*~~~~~ Taken From:
-      https://www.w3schools.com/howto/howto_css_parallax.asp*/
-      .parallax {
-        /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
+      @font-face {
+        font-family: pageslol;
+        src: url("https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/VerilySerifMono.otf?v=1730913409157");
+      }
+      body {
+        background-color: black;   
+      }
+      img {
+        margin: 25px 10px 10px 100px; object-fit: cover;
+      }
+      p {
+  font-size: 2px;
+  color: white;
+      }
+        h1:hover {
+        color: rgb(214, 122, 222);
+      }  
+}
+ }
+      #move {
+        background-color: none;
+        text-align: right;
+        margin-right: 20%;
+      }
 
-        /* Set a specific height */
-        min-height: 500px;
+      #main {
+        display: flex;
+        justify-content: center;
+      
+      }
+    
+      .name {
+        font-size: 60px;
+         font-family: "Libre Caslon Display", serif;
+        color: white; 
+      }
+      .pages {
+        font-size: 30px;
+        font-famly: pageslol;
+          font-family: "Libre Caslon Display", serif;
+         color: white; 
+      }
+      .menu:hover{
+        color: rgb(214,122,222)
+           
+      }
+      a {color: white; text-decoration:none }
 
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .textblock {
-        min-height: 500px;
-        background-color: black;
-        color: white;
-      }
-      .parent-flex {
-        display: flex;
-      }
-      .child-flex {
-        background-color: green;
-        margin: 30px;
-        padding: 10px;
-        text-align: justify;
-        width: 40%;
-      }
-      .para-1{
-        display: flex;
-        align-items: center;
-      }
+      
+          .topnav {
+  overflow: hidden;
+  background-color: #ef9ad4;
+   
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center; 
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #fabef5;
+  color: black;
+   text-align: center; 
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+   
+}
     </style>
   </head>
   <body>
-    <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul class="nav">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-    </ul>
+    
+  <div class="topnav">
+  <a class="active" href="index.html">ABOUT ME</a>
+  <a href= "commissions.html" >COMMISSION</a>
+  <a href="artwork.html">ARTWORK</a>
+  <a href="contact.html">CONTACT</a>
+    
+</div>
+ 
+    <div id="main">
+      <img
+        src="https://cdn.glitch.global/cd55bd7e-c401-4b1f-928d-a4b0d1193aa8/IMG_8010.JPG?v=1741969029381"
+        width="600"
+      />
 
-    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
-    <div class="parallax"></div>
-
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+      <div id="text">
+        <h1 class="name">JANEL<br />VALENTINE</h1>
+        <p class="pages">
+          
+Janel is an aspiring artist from Harlem, NY. She is a senior in highschool and ready to start her career in fine arts. Her major focus is painting. However, she has practiced many mediums like Printmaking, Sculpture, and Graphic design. Her goal is to create art and show kids this is a way to express themesleves freely. Janel wants to create opportunities for all kids to be featured in gallerys all around the world. "Though it may be an  early start, its better then never." - Janel Valentine
         </p>
       </div>
     </div>
+   
+      
+
   </body>
 </html>
